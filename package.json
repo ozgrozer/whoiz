@@ -13,6 +13,7 @@
     "bootstrap": "^4.3.1",
     "parcel-bundler": "^1.12.3",
     "react": "^16.9.0",
-    "react-dom": "^16.9.0"
+    "react-dom": "^16.9.0",
+    "rfv": "^0.0.27"
   }
 }
