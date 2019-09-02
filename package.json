@@ -1,5 +1,5 @@
 {
-  "name": "react-parcel",
+  "name": "whoiz",
   "scripts": {
     "start": "parcel ./src/frontend/index.html --out-dir ./dist --public-url / --port 1145",
     "prebuild": "cd ./docs && find . -maxdepth 1 -type f -exec rm -f {} +",
