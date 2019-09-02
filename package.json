@@ -2,6 +2,7 @@
   "name": "react-parcel",
   "scripts": {
     "start": "parcel ./src/frontend/index.html --out-dir ./dist --public-url / --port 1145",
+    "prebuild": "cd dist && find . -maxdepth 1 -type f -exec rm -f {} +",
     "build": "parcel build ./src/frontend/index.html --out-dir ./dist --public-url / --no-source-maps"
   },
   "license": "MIT",
