@@ -1,9 +1,50 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
+import { Form, Input, Textarea } from 'rfv'
+
+const validations = {
+  domain: [
+    {
+      rule: 'isFQDN',
+      invalidFeedback: 'Please provide a valid domain'
+    }
+  ]
+}
 
 const App = () => {
+  const [result, setResult] = useState()
+
+  const postSubmit = (res) => {
+    setResult(res.data.whois)
+  }
+
+  const postOptions = {
+    method: 'post',
+    url: 'https://whoiz.glitch.me/check'
+  }
+
   return (
-    <h1>Hello World 2!</h1>
+    <div>
+      <Form
+        postSubmit={postSubmit}
+        postOptions={postOptions}>
+        <div>
+          <Input
+            type='url'
+            name='domain'
+            placeholder='google.com'
+            validations={validations.domain} />
+        </div>
+
+        <div>
+          <button>Submit</button>
+        </div>
+      </Form>
+
+      <pre id='result'>
+        {result}
+      </pre>
+    </div>
   )
 }
 
