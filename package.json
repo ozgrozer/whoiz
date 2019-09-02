@@ -3,7 +3,7 @@
   "scripts": {
     "start": "parcel ./src/frontend/index.html --out-dir ./dist --public-url / --port 1145",
     "prebuild": "cd ./docs && find . -maxdepth 1 -type f -exec rm -f {} +",
-    "build": "parcel build ./src/frontend/index.html --out-dir ./docs --public-url / --no-source-maps"
+    "build": "parcel build ./src/frontend/index.html --out-dir ./docs --public-url /whoiz/ --no-source-maps"
   },
   "license": "MIT",
   "dependencies": {
