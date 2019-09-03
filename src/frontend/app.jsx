@@ -48,7 +48,7 @@ const App = () => {
           </div>
 
           <button className='btn btn-lg btn-block btn-primary'>
-            Submit
+            Lookup
           </button>
         </fieldset>
       </Form>
