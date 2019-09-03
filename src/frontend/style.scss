@@ -1,3 +1,27 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+@import './../../node_modules/bootstrap/scss/functions';
+@import './../../node_modules/bootstrap/scss/variables';
+@import './../../node_modules/bootstrap/scss/mixins';
+@import './../../node_modules/bootstrap/scss/reboot';
+@import './../../node_modules/bootstrap/scss/type';
+@import './../../node_modules/bootstrap/scss/forms';
+@import './../../node_modules/bootstrap/scss/buttons';
+
+.container {
+  width: 500px;
+  margin: 100px auto;
+}
+
+.whoisResult {
+  margin-top: 50px;
+
+  .infoGroup {
+    margin-top: 10px;
+    &:first-child {
+      margin-top: 0;
+    }
+
+    .infoKey {
+      font-weight: bold;
+    }
+  }
 }
