@@ -6,6 +6,6 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "whois": "^2.10.1"
+    "whois-api": "^1.0.2"
   }
 }

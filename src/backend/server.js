@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
 const port = process.env.PORT || 1146
-const whois = require('whois')
+const whois = require('whois-api')
 
 app.use(express.json())
 app.use((req, res, next) => {
@@ -22,9 +22,7 @@ app.post('/check', (req, res) => {
     success: false
   }
 
-  console.log(req.body)
-
-  whois.lookup(req.body.domain, function (err, data) {
+  whois.rawLookup(req.body.domain, (error, data) => {
     result.whois = data
     result.success = true
     res.send(result)
