@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
-import { Form, Input, Textarea } from 'rfv'
+import { Form, Input } from 'rfv'
 
 const validations = {
   domain: [
