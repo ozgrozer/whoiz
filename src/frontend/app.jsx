@@ -43,7 +43,6 @@ const App = () => {
               type='url'
               name='domain'
               placeholder='google.com'
-              value='google.com'
               validations={validations.domain}
               className='form-control form-control-lg' />
           </div>
