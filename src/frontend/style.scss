@@ -6,9 +6,21 @@
 @import './../../node_modules/bootstrap/scss/forms';
 @import './../../node_modules/bootstrap/scss/buttons';
 
+$xsMaxBreakpoint: 575px;
+$smMinBreakpoint: 576px;
+$mdMinBreakpoint: 768px;
+$lgMinBreakpoint: 992px;
+$xlMinBreakpoint: 1200px;
+
 .container {
-  width: 500px;
-  margin: 100px auto;
+  @media (max-width: $xsMaxBreakpoint) {
+    width: 100%;
+    padding: 20px;
+  }
+  @media (min-width: $smMinBreakpoint) {
+    width: 500px;
+    margin: 100px auto;
+  }
 }
 
 .whoisResult {
