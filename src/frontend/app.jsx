@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import { Form, Input } from 'rfv'
 
-import './whoiz/style.scss'
+import './style.scss'
 
 const validations = {
   domain: [
