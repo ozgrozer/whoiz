@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import ReactDOM from 'react-dom'
 import { Form, Input } from 'rfv'
 
-import './style.scss'
+import './whoiz/style.scss'
 
 const validations = {
   domain: [
@@ -36,7 +36,8 @@ const App = () => {
         className='ui form'
         onSubmit={onSubmit}
         postSubmit={postSubmit}
-        postOptions={postOptions}>
+        postOptions={postOptions}
+      >
         <fieldset disabled={formIsSubmitting}>
           <div className='form-group'>
             <Input
@@ -44,7 +45,8 @@ const App = () => {
               name='domain'
               placeholder='google.com'
               validations={validations.domain}
-              className='form-control form-control-lg' />
+              className='form-control form-control-lg'
+            />
           </div>
 
           <button className='btn btn-lg btn-block btn-primary'>
@@ -60,7 +62,8 @@ const App = () => {
           return (
             <div
               key={index}
-              className='infoGroup'>
+              className='infoGroup'
+            >
               <div className='infoKey'>
                 {whoisResultKey}
               </div>
